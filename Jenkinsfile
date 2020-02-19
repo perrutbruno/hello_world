@@ -14,4 +14,9 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            emailext body: 'Joob de build hello.py finalizado com sucesso!', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Job de teste finalizado com sucesso'
+        }
+    }
 }

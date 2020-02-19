@@ -16,7 +16,7 @@ pipeline {
     }
     post {
         always {
-            emailext body: 'Job de build hello.py finalizado com sucesso!', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Job de teste finalizado com sucesso', to: 'bruno.infra@alterdata.com.br'
+            emailext body: 'Job de build hello.py finalizado com sucesso!', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Job de teste finalizado com sucesso', to: 'pjrcsvef@sharklasers.com'
         }
     }
 }
